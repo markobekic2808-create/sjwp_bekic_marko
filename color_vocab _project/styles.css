@@ -1,0 +1,29 @@
+#red{
+    color: red;
+}
+#blue{
+    color: blue;
+}
+#orange{
+    color:orange;
+}
+#green{
+    color: green;
+}
+#yellow{
+    color: yellow;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+h2{
+    font-weight: normal;
+}
+h1{
+  /*  color: #845caa;   */
+ /* color: rgb(25,55,45); */
+ /*color:hsl(67, 67%, 67%);*/
+ color: rgba(20, 88,66, 0.5);
+ 
+}

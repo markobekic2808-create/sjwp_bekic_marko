@@ -1,0 +1,24 @@
+/*klase selektori, moze biti vise istih klasa*/
+.treci {
+    color:green;
+}
+
+/*element selector*/
+h2, p{
+    color:violet;
+}
+
+/*id selektor, jedinstven*/
+#Naslov {
+    color: purple;
+}
+
+/*selektor koji se primjenjuje na sve*/
+*{
+    background-color: aqua;
+}
+
+/* selektor s odredjenim atributom*/
+p[draggable]{
+    background-color: antiquewhite;
+}
