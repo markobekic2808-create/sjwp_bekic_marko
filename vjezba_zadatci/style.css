@@ -1,0 +1,38 @@
+.tablica{
+    border: 1px solid gray;
+    margin-left: 40%;
+    margin-top: 20%;
+    scale: 2.5;
+    height: 150px;
+    width: 400px;
+  border-collapse: collapse;
+}
+.prvi{
+    background-color: rgb(27, 137, 240);
+    border: 1px solid gray;
+   color: white; 
+   font-weight: bold;
+    
+    
+}
+.drugi{
+    background-color: lightgrey;
+    border: 1px solid gray;
+}
+
+.cetvrti{
+    background-color: lightgray;
+    border: 1px solid gray;
+}
+.sesti{
+    background-color: lightgray;
+    border: 1px solid gray;
+}
+*{
+    text-align: left;
+    font-size: 8px;
+    
+}
+tr,td{
+    border: 1px solid grey;
+}
