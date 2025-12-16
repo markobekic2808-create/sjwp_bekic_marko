@@ -147,3 +147,99 @@
     
     z-index: 1;
 }
+
+
+
+.zelena{
+    height: 300px;
+    width: 600px;
+    background-color: #007A5E;
+    position: relative;
+
+}
+
+.crvenakam{
+    height: 300px;
+    width: 200px;
+    background-color: #EE1126;
+    position:absolute;
+         left: 200px;
+   
+}
+.zuta1{
+    height: 300px;
+    width: 200px;
+    background-color: gold;
+    position: absolute;
+    left: 400px;
+}
+
+.zvijezda{
+    width: 150px;
+    height: 150px;
+    background: gold;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+    );
+    position: absolute;
+    left: 230px;
+    top: 75px;
+}
+
+.crvenatur{
+    height: 300px;
+    width: 600px;
+    background-color: red;
+    position: relative;
+
+}
+.bijelikrug{
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 70px;
+}
+.crvenikrug{
+    height: 160px;
+    width: 160px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 70px;
+    left: 120px;
+}
+
+.bijelazvijezda{
+          width: 120px;
+    height: 120px;
+    background: white;
+    clip-path: polygon(
+        50% 0%,
+        61% 35%,
+        98% 35%,
+        68% 57%,
+        79% 91%,
+        50% 70%,
+        21% 91%,
+        32% 57%,
+        2% 35%,
+        39% 35%
+        
+    );
+    transform: rotate(-20deg);
+    position: absolute;
+    left: 240px;
+    top: 80px;
+}
