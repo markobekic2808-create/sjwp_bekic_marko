@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadatak 1</title>
+
+    <style>
+        .gumb{
+            width: 150px;
+            height: 150px;
+            background: black;
+            color: yellow;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1rem;
+            font-weight: bold;
+            box-sizing: border-box;
+            padding: 50px;
+            text-align: center;
+            margin-left: 100px;
+            margin-top: 100px;
+            animation-duration: 2s;
+            animation-name: povecanje;
+            animation-timing-function: ease;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-fill-mode: alternate;
+        }
+
+        @keyframes povecanje{
+            100%{scale: 1.5;
+            }
+        }
+
+        .boje{
+            width: 200px;
+            height: 200px;
+            background: red;
+            animation-duration: 4s;
+            animation-name: bojee;
+            animation-timing-function: ease;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-fill-mode: alternate;
+
+        }
+
+        @keyframes bojee{
+            25%{
+                background: red;
+
+            }
+            50%{
+                background:blue;
+            }
+            75%{
+                background: green;
+            }
+            100%{
+                background: red;
+            }
+
+        }
+
+        .pomicanje{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: aqua;
+            animation-duration: 3s;
+            animation-name: pomicanjee;
+            animation-timing-function: ease;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-fill-mode: alternate;
+        }
+
+        @keyframes pomicanjee{
+            50%{
+                transform: translateX(100px);
+            }
+        }
+
+        .kartice{
+            width: 300px;
+            height: 150px;
+            background: red;
+            color: black;
+            font-size: 1rem;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+            padding: 50px;
+            text-align: center;
+            margin-left: 150px;
+            margin-top: 100px;
+
+
+
+        }
+        .kartice:hover{
+            animation-duration: 0.5s;
+            animation-name: hoverr;
+            animation-timing-function: ease;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+            animation-fill-mode: alternate;
+        }
+        @keyframes hoverr{
+            0%{
+                scale: 1.5;
+
+            }
+            50%{
+                background: yellow;
+            }
+            100%{
+                box-shadow: 0 0 10px green;
+            }
+        }
+
+        .rotacija{
+            height: 200px;
+            width: 200px;
+            background: royalblue;
+            animation-duration: 2s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-fill-mode: alternate;
+            animation-name: rotacijaa;
+            
+        }
+        @keyframes rotacijaa{
+           
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+         .loading{width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            border: 4px solid sandybrown;
+            border-top: 4px solid white;
+            animation-duration: 1s;
+           animation-name: loadingg;
+           animation-iteration-count: infinite;
+           animation-timing-function: linear;
+         }
+
+         @keyframes loadingg{
+            0%{
+                transform: rotate(0);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        .semafor{
+            width: 200px;
+            height: 600px;
+            background: black;
+            position: relative;
+
+        }
+        .crveno{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: grey;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+
+            
+            animation-duration: 1s;
+            animation-name: crv;
+            
+            animation-iteration-count: infinite;
+            animation-fill-mode:none;
+          
+
+        }
+        @keyframes crv{
+            0%{
+                background: gray;
+              
+            }
+            33%{
+                background: red;
+                
+            }
+            66%{
+                background:grey;
+            }
+            100%{
+                background:grey;
+            }
+
+        }
+        .zuto{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: grey;
+            position: absolute;
+            top: 200px;
+            left: 20px;
+            animation-duration: 1s;
+            animation-name: zut;
+            
+            animation-iteration-count: infinite;
+            animation-fill-mode:none;
+           
+
+        }
+          @keyframes zut{
+            0%{
+                background: gray;
+            }
+            33%{
+                background:grey;
+            }
+            66%{
+                background: yellow;
+                
+            }
+            100%{
+                background:grey;
+            }
+        }
+
+        .zeleno{
+             width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: grey;
+            position: absolute;
+            top: 400px;
+            left: 20px;
+            animation-duration: 1s;
+            animation-name: zel;
+           
+            animation-iteration-count: infinite;
+            animation-fill-mode:none;
+            
+
+        }
+ @keyframes zel{
+            0%{
+                background: gray;
+                
+            }
+            33%{
+                background:grey;
+            }
+            66%{
+                background:grey;
+            }
+            100%{
+                background: green;
+                
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Zadatak 1</h1>
+
+   <div class="gumb">Klikni me</div>
+
+   <br><br>
+   <h1>Zadatak 2</h1>
+   <div class="boje"></div>
+   <br><br>
+   <h1>Zadatak 3</h1>
+   <div class="pomicanje"></div>
+   <br><br>
+   <h1>Zadatak 4</h1>
+    <div class="kartice">Kartica</div>
+    <br><br>
+    <h1>Zadatak 5</h1>
+    <div class="rotacija"></div>
+    <br><br>
+    <h1>Zadatak 6</h1>
+    <div class="loading"></div>
+    <br><br>
+    <h1>Zadatak 8</h1>
+    <div class="semafor">
+         <div class="crveno"></div>
+    <div class="zuto"></div>
+    <div class="zeleno"></div>
+    </div>
+   
+
+</body>
+</html>
