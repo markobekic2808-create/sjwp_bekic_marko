@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISPITNA</title>
+    <style>
+        .lampa{
+            height: 200px;
+            width: 200px;
+            border-radius: 50%;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-fill-mode:alternate;
+            background-color: blue;
+            animation-name: zad1;
+            animation-duration: 1.5s;
+            opacity: 1;
+        }
+        @keyframes zad1{
+            0%{
+                background: black;
+                opacity: 0;
+            }
+            50%{
+                background: black;
+                opacity: 1;
+            }
+            90%{
+                background: blue;
+            }
+            100%{
+                background: blue;
+                opacity: 1;
+            }
+
+        }
+
+        .ulazak{
+            text-align: center;
+            font-size: 20px;
+            opacity: 0;
+            animation: zad2 2s forwards;
+         
+
+        }
+        @keyframes zad2{
+            0%{
+                transform: translateX(-700px);
+                opacity: 0;
+            }
+            100%{
+                transform: translateX(0px);
+                opacity: 1;
+            }
+
+        }
+        
+        .promjena{
+             height: 200px;
+            width: 200px;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-fill-mode:alternate;
+            background-color: blue;
+            animation-name: zad3;
+            animation-duration: 3s;
+      
+            
+        }
+
+        @keyframes zad3{
+            20%{
+                border-radius: 50%;
+            }
+            85%{
+                border-radius: 0;
+            }
+        }
+        
+        .rotacija{
+             height: 200px;
+            width: 200px;
+           background: red;
+        }
+        .rotacija:hover{
+            animation-duration: 0.4s;
+            animation-name: hoverr;
+            animation-timing-function: ease;
+            animation-direction: alternate;
+            
+            animation-fill-mode: alternate;
+        }
+        @keyframes hoverr{
+            100%{
+                transform:rotate(90deg);
+            }
+        }
+
+        .signal{
+            height: 500px;
+            width: 500px;
+            background: black;
+            position: relative;
+
+        }
+        .prvi{
+            width: 50px;
+            height: 100px;
+            background: green;
+            position: absolute;
+            top: 400px;
+            animation-name: jedan;
+             animation-iteration-count: infinite;
+            animation-fill-mode:none;
+            animation-duration: 2s;
+            animation-timing-function: alternate;
+        }
+        @keyframes jedan{
+            0%{
+                background: green;
+            }
+            20%{
+                background: grey;
+            }
+            40%{
+                background: grey;
+            }
+            60%{
+                background: grey;
+            }
+            80%{
+                background: grey;
+            }
+            100%{
+                background: grey;
+            }
+        }
+        .drugi{
+            width: 50px;
+            height: 200px;
+            background: green;
+            position: absolute;
+            top: 300px;
+            left: 100px;
+            animation-name: dva;
+            animation-duration: 2s;
+             animation-fill-mode:none;
+            animation-timing-function: alternate;
+             animation-iteration-count: infinite;
+        }
+        @keyframes dva{
+             0%{
+                background: grey;
+            }
+            20%{
+                background: green;
+            }
+            40%{
+                background: grey;
+            }
+            60%{
+                background: grey;
+            }
+            80%{
+                background: grey;
+            }
+            100%{
+                background: grey;
+            }
+        }
+        .treci{
+            width: 50px;
+            height: 300px;
+            background: green;
+            position: absolute;
+            top: 200px;
+            left: 200px;
+            animation-name: tri;
+            animation-duration: 2s;
+             animation-fill-mode:none;
+            animation-iteration-count: infinite;
+            animation-timing-function: alternate;
+        }
+        @keyframes tri{
+             0%{
+                background: grey;
+            }
+            20%{
+                background: grey;
+            }
+            40%{
+                background: green;
+            }
+            60%{
+                background: grey;
+            }
+            80%{
+                background: grey;
+            }
+            100%{
+                background: grey;
+            }
+        }
+        .cetvrti{
+            width: 50px;
+            height: 400px;
+            background: green;
+            position: absolute;
+            top: 100px;
+            left: 300px;
+            animation-name: cetri;
+            animation-duration: 2s;
+             animation-fill-mode:none;
+          animation-iteration-count: infinite;
+            animation-timing-function: alternate;
+        }
+        @keyframes cetri{
+             0%{
+                background: grey;
+            }
+            20%{
+                background: grey;
+            }
+            40%{
+                background: grey;
+            }
+            60%{
+                background: green;
+            }
+            80%{
+                background: grey;
+            }
+            100%{
+                background: grey;
+            }
+        }
+        .peti{
+            width: 50px;
+            height: 500px;
+            background: green;
+            position: absolute;
+            left: 400px;
+            animation-name: pet;
+            animation-duration: 2s;
+            
+            animation-iteration-count: infinite;
+            animation-timing-function: alternate;
+            
+        }
+        @keyframes pet{
+             0%{
+                background: grey;
+            }
+            20%{
+                background: grey;
+            }
+            40%{
+                background: grey;
+            }
+            60%{
+                background: grey;
+            }
+            80%{
+                background: green;
+            }
+            100%{
+                background: grey;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="lampa"></div>
+    <div class="ulazak">ulazak</div>
+    <br>
+    <div class="promjena"></div>
+    <div class="rotacija"></div>
+    <div class="signal">
+        <div class="prvi"></div>
+        <div class="drugi"></div>
+        <div class="treci"></div>
+        <div class="cetvrti"></div>
+        <div class="peti"></div>
+    </div>
+    
+</body>
+</html>
