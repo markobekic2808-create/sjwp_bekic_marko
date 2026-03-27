@@ -4,113 +4,157 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Filmovi</title>
+   
     <style>
-        body{
-            margin: 0;
-            background-color: #FAE6B1;
-        }
-        .bar{
-            
-            display: inline;
-            background-color: #333;
-            padding: 10px;
-            color: #B3DEE5;
-            font-family: 'Times New Roman', Times, serif;
-            font-size: 25px;
-            background-color: #31525B;
-        }
-        .bar a{
-            font-size: 20px;
-            color: #B3DEE5;
-            text-decoration: none;
-            margin-left: 722px;
-        }
-        .grid{
-            display: grid;
-            margin-top: 10px;
-            grid-template-columns: repeat(6, 1fr);
-            gap: 20px;
-            padding: 20px;
-        }
-        .mjesto{
-            background-color: #FFA101;
-            height: 550px;
-            width: 380px;
-            border-radius: 8%;
-            border: 5px solid #FFA101;
-        }
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FA003F;
+  font-family: sans-serif;
+}
+
+h2, p {
+  margin: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #800200;
+}
+.active{
+  background-color: #FA003F;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+} 
+
+ul li a:hover:not(.active) {
+  background-color: #111111;
+}
+.grid{
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.mjesto{
+    background-color: #333;
+    width: 100%;
+    aspect-ratio: 2/3; 
+    border-radius: 10px;
+    border: 2px solid #800200;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    transition: transform 0.3s ease;
+}
+
+.mjesto:hover{
+    transform: scale(1.05);
+}
+
     </style>
 </head>
 <body>
-    <div class="bar">GALERIJA
-        <a href="index.html" class="filmovi2">Filmovi</a>
-        <a href="zanrovi.html" class="serije">Serije</a>
-        <a href="dokumentarci.html"class="dokumentarci">Dokumetarci</a>
-    </div>
-    <div class="grid">
-<a href="https://www.imdb.com/title/tt30144839/?ref_=int_popm_tenup_i_1" class="mjesto" style="background-image: url('https://b6s54eznn8xq.merlincdn.net/Uploads/Films/jedna-bitka-za-drugom-202582817286e575a27768f4bc699bfcb551b49afdc.jpg'); background-size: cover;"></a>
-<a href="https://www.imdb.com/title/tt31193180/?ref_=int_popm_tenup_i_2" class="mjesto" style="background-image: url('https://cinestarcinemas.hr/remote/185.155.226.145/movies/Sinners/sinners_556x800_hrvv.jpg?preset=film'); background-size: cover;"></a>
-<a href="https://www.imdb.com/title/tt0468569/?ref_=int_ratm_i_1" class="mjesto" style="background-image: url('https://upload.wikimedia.org/wikipedia/hr/8/8a/Dark_Knight.jpg'); background-size: cover;"></a>
-<a href="https://www.imdb.com/title/tt1375666/?ref_=int_ratm_i_2" class="mjesto" style="background-image: url('https://upload.wikimedia.org/wikipedia/sr/5/5d/Pocetak.jpg'); background-size: cover;"></a>
-<a href="https://www.imdb.com/title/tt0133093/?ref_=int_ratm_i_3" class="mjesto" style="background-image: url('https://m.media-amazon.com/images/I/613ypTLZHsL._AC_UF350,350_QL80_.jpg'); background-size: cover;"></a>
-<a href="https://www.imdb.com/title/tt0080684/?ref_=int_ratm_i_4" class="mjesto" style="background-image: url('https://b6s54eznn8xq.merlincdn.net/Uploads/Films/ratovi-zvijezda-v-imperij-uzvraa-udarac-1980-20258221532607fe5668433f46ce8f86ef94805c1d3d.jpg'); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-<a href="" class="mjesto" style="background-image: url(); background-size: cover;"></a>
-       
+<ul>
+        <li><a href="zadaca3.html" class="active">GALERIJA</a></li>
+        <li ><a href="filmovi.html" class="filmovi">Filmovi</a></li>
+        <li ><a href="serije.html" class="serije">Serije</a></li>
+        <li ><a href="igre.html" class="igrice">Igrice</a></li>
+</ul>
+<div class="grid">
 
-    
-    </div>
+<a href="https://www.imdb.com/title/tt0111161/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/q6y0Go1tsGEsmtFryDOJo3dEmqu.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0068646/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/3bhkrj58Vtu7enYsRolD1fZdja1.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0468569/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/qJ2tW6WMUDux911r6m7haRef0WH.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0071562/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/hek3koDUyRQk7FIhPXsa6mT2Zc3.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0050083/" class="mjesto" style="background-image:url('https://m.media-amazon.com/images/M/MV5BYjE4NzdmOTYtYjc5Yi00YzBiLWEzNDEtNTgxZGQ2MWVkN2NiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg');"></a>
+
+<a href="https://www.imdb.com/title/tt0108052/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/sF1U4EUQS8YHUYjNl3pMGNIQyr0.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0167260/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/56zTpe2xvaA4alU51sRWPoKPYZy.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0110912/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/d5iIlFn5s0ImszYzBPb8JPIfbXD.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0060196/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/8OKmBV5BUFzmozIC3pPWKHy17kx.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0137523/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/bptfVGEQuv6vDTIMVCHjJ9Dz8PX.jpg');"></a>
+
+<a href="https://www.imdb.com/title/tt0120737/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0109830/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/arw2vcBveWOVZr6pxd9XTd1TdQa.jpg');"></a>
+<a href="https://www.imdb.com/title/tt1375666/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0167261/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/5VTN0pR8gcqV3EPUHHfMGnJYN9L.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0080684/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/7BuH8itoSrLExs2YZSsM01Qk2no.jpg');"></a>
+
+<a href="https://www.imdb.com/title/tt0133093/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0099685/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0073486/" class="mjesto" style="background-image:url('https://upload.wikimedia.org/wikipedia/en/2/26/One_Flew_Over_the_Cuckoo%27s_Nest_poster.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0047478/" class="mjesto" style="background-image:url('https://m.media-amazon.com/images/M/MV5BZDg4MTYyYjktZGJiYy00ZGIwLWEzNTMtNTZkMjRhYTViMWE4XkEyXkFqcGc@._V1_.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0114369/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/6yoghtyTpznpBik8EngEmJskVUO.jpg');"></a>
+
+
+<a href="https://www.imdb.com/title/tt0903747/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/ggFHVNu6YYI5L9pCfOacjizRGt.jpg');"></a>
+<a href="https://www.imdb.com/title/tt1475582/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/uxzzxijgPIY7slzFvMotPv8wjKA.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0944947/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/u3bZgnGQ9T01sWNhyveQz0wH0Hl.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0306414/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/9jkThAGYj2yp8jsS6Nriy5mzKFT.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0417299/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/7RyHsO4yDXtBv1zUU3mTpHeQ0d5.jpg');"></a>
+
+<a href="https://www.imdb.com/title/tt4574334/" class="mjesto" style="background-image:url('https://m.media-amazon.com/images/M/MV5BM2EwMzUyY2ItYzkzOS00YTJkLTk2ZjItNmVkOTkzMmM1NDEyXkEyXkFqcGc@._V1_.jpg');"></a>
+<a href="https://www.imdb.com/title/tt2395695/" class="mjesto" style="background-image:url('https://m.media-amazon.com/images/M/MV5BZThkMjA5YWQtYTUzOC00ZWUzLWE2MWEtOGZjNTkzOTJjYTM5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg');"></a>
+<a href="https://www.imdb.com/title/tt7366338/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/7g6wvsWHxBQujUcSXvZLhdFpDUy.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0108778/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/f496cm9enuEsZkSPzCwnTESEK5s.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0386676/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/qWnJzyZhyy74gjpSjIXWmuk0ifX.jpg');"></a>
+
+
+<a href="https://www.imdb.com/title/tt0103359/" class="mjesto" style="background-image:url('https://m.media-amazon.com/images/M/MV5BYjgwZWUzMzUtYTFkNi00MzM0LWFkMWUtMDViMjMxNGIxNDUxXkEyXkFqcGc@._V1_.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0096697/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/zZqpAXxVSBtxV9qPBcscfXBcL2w.jpg');"></a>
+<a href="https://www.imdb.com/title/tt2085059/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/6tfT03sGp9k4c0J3dypjrI8TSAI.jpg');"></a>
+<a href="https://www.imdb.com/title/tt2861424/" class="mjesto" style="background-image:url('https://m.media-amazon.com/images/M/MV5BZGQyZjk2MzMtMTcyNC00NGU3LTlmNjItNDExMWM4ZDFhYmQ2XkEyXkFqcGc@._V1_.jpg');"></a>
+<a href="https://www.imdb.com/title/tt2442560/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/9ijMGlJKqcslswWUzTEwScm82Gs.jpg');"></a>
+
+<a href="https://www.imdb.com/title/tt5180504/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/8j12tohv1NBZNmpU93f47sAKBbw.jpg');"></a>
+<a href="https://www.imdb.com/title/tt3322312/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/x2LSRK2Cm7MZhjluni1msVJ3wDF.jpg');"></a>
+<a href="https://www.imdb.com/title/tt8111088/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/6EdKBYkB1ssgGjc249ud1L55o8d.jpg');"></a>
+<a href="https://www.imdb.com/title/tt2707408/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/8Vt6mWEReuy4Of61Lnj5Xj704m8.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0141842/" class="mjesto" style="background-image:url('https://image.tmdb.org/t/p/w500/eU1i6eHXlzMOlEq0ku1Rzq7Y4wA.jpg');"></a>
+
+
+
+<a href="https://www.imdb.com/title/tt2103188/" class="mjesto" style="background-image:url('https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7f.jpg');"></a>
+<a href="https://www.imdb.com/title/tt3450958/" class="mjesto" style="background-image:url('https://images.igdb.com/igdb/image/upload/t_cover_big/co2lbd.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0802992/" class="mjesto" style="background-image:url('https://images.igdb.com/igdb/image/upload/t_cover_big/co1r8o.jpg');"></a>
+<a href="https://www.imdb.com/title/tt1790864/" class="mjesto" style="background-image:url('https://images.igdb.com/igdb/image/upload/t_cover_big/co2abc.jpg');"></a>
+<a href="https://www.imdb.com/title/tt4158110/" class="mjesto" style="background-image:url('https://images.igdb.com/igdb/image/upload/t_cover_big/co1r7g.jpg');"></a>
+
+<a href="https://www.imdb.com/title/tt0397162/" class="mjesto" style="background-image:url('https://images.igdb.com/igdb/image/upload/t_cover_big/co2edk.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0465997/" class="mjesto" style="background-image:url('https://images.igdb.com/igdb/image/upload/t_cover_big/co1r92.jpg');"></a>
+<a href="https://www.imdb.com/title/tt3810192/" class="mjesto" style="background-image:url('https://images.igdb.com/igdb/image/upload/t_cover_big/co2l7f.jpg');"></a>
+<a href="https://www.imdb.com/title/tt1190634/" class="mjesto" style="background-image:url('https://m.media-amazon.com/images/M/MV5BZjU4OWNiYzQtMzc1NS00NjZlLTgyYTctZWY4ZmEzMTkxYjA4XkEyXkFqcGc@._V1_QL75_UX190_CR0,2,190,281_.jpg');"></a>
+<a href="https://www.imdb.com/title/tt2993508/" class="mjesto" style="background-image:url('https://images.igdb.com/igdb/image/upload/t_cover_big/co2l8k.jpg');"></a>
+
+<a href="https://www.imdb.com/title/tt0475784/" class="mjesto" style="background-image:url('https://m.media-amazon.com/images/M/MV5BMjM2MTA5NjIwNV5BMl5BanBnXkFtZTgwNjI2OTMxNTM@._V1_FMjpg_UX1000_.jpg');"></a>
+<a href="https://www.imdb.com/title/tt5838588/" class="mjesto" style="background-image:url('https://images.igdb.com/igdb/image/upload/t_cover_big/co2l9m.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0103776/" class="mjesto" style="background-image:url('https://m.media-amazon.com/images/M/MV5BZTliMDVkYTktZDdlMS00NTAwLWJhNzYtMWIwMDZjN2ViMGFiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0311596/" class="mjesto" style="background-image:url('https://images.igdb.com/igdb/image/upload/t_cover_big/co2la1.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0395578/" class="mjesto" style="background-image:url('https://m.media-amazon.com/images/M/MV5BNTI3NGJmYTUtN2IzMS00NjYxLTk4MTYtZTRkNDA1MGEyOTU4XkEyXkFqcGc@._V1_.jpg');"></a>
+
+<a href="https://www.imdb.com/title/tt0410747/" class="mjesto" style="background-image:url('https://images.igdb.com/igdb/image/upload/t_cover_big/co2lb2.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0425715/" class="mjesto" style="background-image:url('https://m.media-amazon.com/images/M/MV5BODg2ZmFlYWMtNTg5OS00OTVlLWFlMzMtMmFjMzJhYjYyZjQ0XkEyXkFqcGc@._V1_.jpg');"></a>
+<a href="https://www.imdb.com/title/tt1568346/" class="mjesto" style="background-image:url('https://images.igdb.com/igdb/image/upload/t_cover_big/co2lc3.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0106179/" class="mjesto" style="background-image:url('https://m.media-amazon.com/images/M/MV5BNzg3ODVhZWEtYmI0MC00NDQ0LWEyNGYtM2M0MTRhZTZmMjU3XkEyXkFqcGc@._V1_.jpg');"></a>
+<a href="https://www.imdb.com/title/tt0368226/" class="mjesto" style="background-image:url('https://images.igdb.com/igdb/image/upload/t_cover_big/co2ld4.jpg');"></a>
+</div>
 </body>
 </html>
