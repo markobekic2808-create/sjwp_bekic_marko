@@ -1,379 +1,211 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="Moja web stranica">
-  <meta name="keywords" content="HTML, CSS, JavaScript">
-  <meta name="author" content="Marko Bekic">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skriptni jezici</title>
-  <!-- internal css  -->
-    <style>
-         .drugi{
-          color:red;
-         }
-    </style>
-    <link rel="stylesheet" href="./styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moja Osobna Web Stranica</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+    rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body>
-  <h1>ZADACE</h1>
-<ul>
-  <li><a href="zadace/zadaca1.html" target="_blank"> zadaca1</a></li>
-  <li><a href="zadace/zadaca2.html" target="_blank">zadaca2</a></li>
-  <li><a href="zadace/zadaca3.html" target="_blank">zadaca3</a></li>
-</ul>
 
-<h2>Dodavanje CSS:</h2>
-<ul>
-  <li style="color:blue;">Inline</li>
-  <li class="drugi">Internal</li>
-  <li class="treci">External</li>
-</ul>
-   <!--  heading elementi -->
-     <h1>Naslov 1</h1>
-     <h2>Naslov 2</h2>
-     <h3>Naslov 3</h3>
-     <h4>Naslov 4</h4>
-     <h5>Naslov 5</h5>
-     <h6>Naslov 6</h6>
-<!-- paragraf element -->
- <!-- break element <br> -->
-  <!-- hr element -->
- <p draggable="true">Lorem ipsum dolor sit amet, consectetur<br> <hr>adipisicing elit. Enim inventore neque accusantium optio, ipsum, ea iusto obcaecati at dolore delectus 
-    aperiam nemo doloribus minus necessitatibus, similique perferendis. Illum, nam consectetur?
- Ex error impedit ducimus soluta. Laborum odio reiciendis molestiae obcaecati neque, dignissimos itaque aliquid tenetur, incidunt accusantium 
- perspiciatis. Nam eveniet quibusdam rerum atque nobis quia recusandae, sint reprehenderit quae temporibus!</p>
-
-
-
-
-<h1>NAJBOLJI FILMOVI</h1>
-<br>
-<h2>MOJI TOP 3</h2>
-<hr>
-<h3 id="Naslov">Iskupljenje u Shawshanku (The Shawshank Redemption, 1994)</h3>
-<p>Nepravedno osuđeni zatvorenik godinama planira bijeg iz zatvora dok gradi prijateljstvo i ne gubi nadu.</p>
-<h3>Početak (Inception)</h3>
-<p>Profesionalni kradljivac snova mora izvesti nemoguću misiju usađivanja ideje u tuđi um.</p>
-<h3>Dobar, loš, zao</h3>
-<p>Trojica revolveraša se utrkuju da pronađu skriveno blago tijekom američkog građanskog rata.</p>
-
-<!-- oblikovanje teksta -->
- <br>
- <br>
- <br>
- <br>
- <br>
-
-<p> Mi smo <strong>3.E razred</strong>. Idemo u <em>Tehničku školu</em>. <mark>Razrednik</mark> nam je <sub>prof</sub>. <sup>Benić</sup>. Ima nas <del>24</del> 26 u razredu.</p>
-<hr>
-<pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, nemo eum quae, assumenda amet harum hic, possimus a iste ab ducimus? Enim accusantium tenetur 
-  tempora libero explicabo officia, dolorem eum.</pre>
-  <br>
-  <hr>
-  <!-- Liste, ul-unordered liste, ol-ordered liste, dl-definition liste -->
-   <h2>Voćni desert u čaši</h2>
-   <h3>Sastojci:</h3>
-   <ul type="square">
-
-      <li>230 g kreme za kremšnite</li>
-      <li>500 ml hladnog mlijeka</li>
-      <li>3-4 žlice pekmeza od višanja</li>
-
-   </ul>
-   <h3>Priprema</h3>
-  <ol type="1" reversed>
-    <li>Prah za kremu pomiješati sa pola litre hladnog mlijeka te miksati 2-3 minute dok se ne dobije jednolična krema. </li>
-    <li>Pekmez od višanja rastopiti na blagoj vatri i ohladiti.</li>
-    <li>U desertne čaše rasporediti sloj pripremljene kreme pa žlicu i pol voćnog nadjeva te ponoviti još jednom postupak i završiti sa voćnim slojem. Posipati nasjeckanim pistacijem i staviti u hladnjak na hlađenje. </li>
-  </ol>
-  <h2>Definition liste</h2>
-  <dl>
-    <dt>Struja</dt>
-    <dd>Usmjereno gibanje elektrona kroz vodič</dd>
-    <dt>Napon</dt>
-    <dd>Razlika potencijala izmedu dvije točke</dd>
-  </dl>
-  <h2>Nested liste</h2>
-  <ul>
-    <li>A</li>
-    <li>B</li>
-    <ol type="1">
-      <li>B1</li>
-      <li>B2</li>
-      <ul>
-        <li>B2a</li>
-        <ul>
-          <li>B2aa</li>
-          <li>B2ab</li>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container">
+      <a class="navbar-brand" href="#">Marko Bekić</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Početna</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#hobiji">Hobiji</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="#zadace">Zadaće</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontakt">Kontakt</a>
+          </li>
         </ul>
-        <li>B2b</li>
-        <li>B2c</li>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero -->
+  <div class="hero-section text-center">
+    <div class="container">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" alt="Profilna slika" class="profile-img mb-4" height="200px">
+      <h1 class="display-5 fw-bold">Marko Bekić</h1>
+      <p class="lead">Učenik TŠSB · Nogomet · Šišanje</p>
+      <p class="col-lg-6 mx-auto">
+        Ja sam Marko Bekić. Učenik sam Tehničke škole Slavonski Brod. U slobodno vrijeme
+        treniram nogomet te se bavim šišanjem.
+      </p>
+      <a href="#hobiji" class="btn btn-primary btn-lg me-2">Saznaj više</a>
+      <a href="#kontakt" class="btn btn-outline-secondary btn-lg">Kontakt</a>
+    </div>
+  </div>
+
+
+  <!-- Hobiji -->
+  <div class="section-padding" id="hobiji">
+    <div class="container">
+      <h2 class="pb-2 border-bottom">Moji Hobiji</h2>
+
+      <div class="row mt-4">
+
+        
+        <div class="col-lg-4">
+          <div class="hobi-kartica">
+            <h4>📘 Škola</h4>
+            <p>
+              Idem u Tehničku školu Slavonski Brod, trenutno sam u 3. razredu smjera
+              tehničar za računalstvo. Završio sam 8 godina osnovne škole, a 
+              pohađao sam osnovnu školu Bogoslav Šulek.
+            </p>
+            
+          </div>
+        </div>
+
+        
+        <div class="col-lg-4">
+          <div class="hobi-kartica">
+            <h4>⚽ Nogomet</h4>
+            <p>
+              Nogomet treniram od svoje šeste godine. Počeo sam trenirati 2014. godine
+              u NK Željezničaru i tamo sam trenirao  12 godina. 2026. godine prešao
+              sam u NK Svačić Stari Slatinik gdje i sada treniram.
+            </p>
+            
+          </div>
+        </div>
+
+       
+        <div class="col-lg-4">
+          <div class="hobi-kartica">
+            <h4>💈 Šišanje</h4>
+            <p>
+              Šišanjem sam se počeo baviti prije godinu dana iz dosade i kao hobi.
+              Sada šišam i radim svaki dan i u tome uživam.
+            </p>
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  
+
+  <!-- Zadaće -->
+  <div class="section-padding" id="zadace">
+    <div class="container">
+      <h2 class="pb-2 border-bottom">Popis Zadaća</h2>
+
+      <ul class="list-group mt-4">
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Zadaća 1 — Recept
+          <a href="./zadace/zadaca1.html" class="btn btn-sm btn-outline-primary">Otvori</a>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Zadaća 2 — CSS stilovi
+          <a href="./zadace/zadaca2.html" class="btn btn-sm btn-outline-primary">Otvori</a>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Zadaća 3 — Galerija
+          <a href="./zadace/zadaca3.html" class="btn btn-sm btn-outline-primary">Otvori</a>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-center">
+          Zadaća 4 — Osobna web stranica
+          <a href="#" class="btn btn-sm btn-primary">Otvori</a>
+        </li>
       </ul>
-      <li>B3</li>
-      <ol type="1">
-        <li>B31</li>
-        <li>B32</li>
-      </ol>
-    </ol>
-    <li>C</li>
-  </ul>
 
-  <br>
-  <hr>
-  <p>Ovo je normalan tekst</p>
-  <p><small>Ovo je manji tekst.</small></p>
-  <hr>
-  <p>Poruka</p>
-  <p><samp>Poruka</samp></p>
-  <hr>
-  <p>poruka</p>
-  <p><ins>poruka</ins></p>
-  <hr>
-  <p>poruka</p>
-  <p><blockquote>poruka</blockquote></p>
-  <hr>
-  <p>poruka</p>
-  <p><details>poruka</details></p>
-  <hr>
-  <h2>Learning Web Development</h2>
-  <ol type="I">
-    <li>Background skills</li>
-    <ol type="A">
-      <li>Unix Commands</li>
-      <li>Vin twxt editor</li>
-    </ol>
-    <li>HTML</li>
-    <ol type="A">
-      <li>Minimal Page</li>
-      <li>Headings</li>
-      <li>Tags</li>
-      <li>Lists</li>
-      <ol type="i">
-        <li>Unordered</li>
-        <li>Ordered</li>
-        <li>Definition</li>
-        <li>Nested</li>
-      </ol>
-      <li>Links</li>
-      <ol type="i">
-        <li>Absolute</li>
-        <li>Relative</li>
-      </ol>
-      <li>Images</li>
-
-    </ol>
-    <li>CSS</li>
-    <ol type="A">
-      <li>Anatomy</li>
-      <li>Basic Selectors</li>
-      <ol type="i">
-        <li>Element</li>
-        <li>Class</li>
-        <li>ID</li>
-        <li>Group</li>
-      </ol>
-      <li>The DOM</li>
-      <li>Advanced Selectors</li>
-      <li>Box Model</li>
-    </ol>
-    <li>Programming</li>
-    <ol type="A">
-      <li>Python</li>
-      <li>JavaScript</li>
-    </ol>
-    <li>Database</li>
-    <ol type="A">
-      <li>Flat File</li>
-      <li>Relational</li>
-    </ol>
-  </ol>
-  <br>
-  <hr>
+    </div>
+  </div>
 
 
-  <h2>Anchor elementi</h2>
-  <p>Web stranicu škole možete vidjeti <a href="https://tssb.hr/" download="web-stranica">ovdje.</a></p>
-  <hr>
-  <h2>My top 5 favourite Websites</h2>
-  <ol>
-    <li><a href="https://www.producthunt.com/" target="_blank">Product hunt</a></li>
-     <li><a href="https://smashthewalls.com/" target="_blank">Smash The Walls</a></li>
-     <li><a href="https://www.nytimes.com/games/wordle/index.html" target="_blank">Wordle</a></li>
-     <li><a href="https://hackertyper.net/" target="_blank">Hacker Typer</a></li>
-     <li><a href="https://stellarium-web.org/" target="_blank">Stellarium</a></li>
-     <br>
-     <h2>IMG Element</h2>
-     <img src="https://yt3.googleusercontent.com/ytc/AIdro_nBWxevYRfiPWSSKrkKCKLYxnuEAkeJAcGwg9HN9N9D_w=s900-c-k-c0x00ffffff-no-rj" 
-     alt="hzv"
-     width=""
-     height="">
-     <!-- OVO IZNAD JE SLIKA S WEBA -->
-<br>
-     <!-- OVO ISPOD JE SLIKA S PC-A -->
-      <img src="Slike/hzv.jpg" alt="HZV">
-<hr>
-<h2>It's My Birthday</h2>
-<h3>On the 12th May</h3>
-<img src="https://images.getrecipekit.com/20250212152521-chocolate-20birthday-20cake-20recipe-20uk.jpg?aspect_ratio=16:9&quality=90&" alt="">
-<h3>What to bring:</h3>
-<ul type="disc">
-  <li>Baloons(I love baloons)</li>
-  <li>Cake(I'm really good at eating)</li>
-  <li>An appetite(There will be lots of food)</li>
+  <!-- Kontakt forma -->
+  <div class="section-padding bg-light" id="kontakt">
+    <div class="container">
+      <h2 class="pb-2 border-bottom">Kontaktirajte Nas</h2>
 
-</ul>
-<h2>This is where you need to go:</h2>
-<br>
-<p><a href="https://www.google.com/maps">Google map link</a></p>
-  </ol>
+      <div class="row mt-4">
+        <div class="col-lg-6">
+          <form action="#" method="GET">
 
-  <br>
-  <hr>
-  <h2>Tablice u HTML-u</h2>
-<table border="1">
-  <tr>
-    <th colspan="2">Ime i prezime</th>
-    
-    <th>Razred</th>
-  </tr>
-  <tr>
-    <td>Marko</td>
-    <td>Bekić</td>
-    <td rowspan="3">3.E</td>
-  </tr>
-  <tr>
-    <td>Patrik</td>
-    <td>Jagodar</td>
-   
-  </tr>
-  <tr>
-    <td>Ana</td>
-    <td>Čondić</td>
-    
-  </tr>
-</table>
-<hr>
-<h3>Zadatak 1</h3>
-<table border="1">
-  <tr>
-    <th>Name</th>
-    <th>Age</th>
-    <th>Country</th>
-  </tr>
-  <tr>
-    <td>Harry Deep</td>
-    <td>28</td>
-    <td>Britain</td>
-  </tr>
-  <tr>
-    <td>John Smith</td>
-    <td>35</td>
-    <td>USA</td>
-  </tr>
-  <tr>
-    <td>Ram Krishna</td>
-    <td>19</td>
-    <td>Nepal</td>
-  </tr>
+            <div class="row mb-3">
+              <div class="col">
+                <label for="ime" class="form-label">Ime i prezime</label>
+                <input type="text" class="form-control" id="ime" name="ime" placeholder="Ime i prezime" required>
+              </div>
+              <div class="col">
+                <label for="email" class="form-label">Email adresa</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="e-mail" required>
+              </div>
+            </div>
+
+            
+
+            <div class="mb-3">
+              <label for="poruka" class="form-label">Poruka</label>
+              <textarea class="form-control" id="poruka" name="poruka" rows="5"
+                placeholder="Napišite svoju poruku..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Pošalji Poruku</button>
+
+          </form>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 
-</table>
-<hr>
-<h2>Zadatak 2</h2>
-<table border="1">
-<tr>
-  <th>S.N</th>
-  <th>Item</th>
-  <th>Quantity</th>
-</tr>
-<tr>
-  <td>1</td>
-  <td>Apple</td>
-  <td>2</td>
-</tr>
-<tr>
-  <td>2</td>
-  <td>Mango</td>
-  <td>2</td>
-</tr>
-<tr>
-  <td>3</td>
-  <td>Orange</td>
-  <td>1</td>
-</tr>
-<tr>
-  <td colspan="2">Total</td>
-  <td>5</td>
-</tr>
-</table>
-<hr>
-<h3>Zadatal 3</h3>
-<table border="1">
-  <tr>
-    <th>Name</th>
-    <th>Subjects</th>
-    <th>Marks</th>
-  </tr>
-  <tr>
-    <td rowspan="3">Mark Smith</td>
-    <td>English</td>
-    <td>67</td>
-  </tr>
-  <tr>
-
-    <td>Maths</td>
-    <td>82</td>
-  </tr>
-  <tr>
-    <td>Science</td>
-    <td>91</td>
-  </tr>
-</table>
-<hr>
-<h3>Zadatak 4</h3>
-<table border 1>
-  <tr>
-    <th>No.</th>
-    <th>Full name</th>
-    <th>Position</th>
-    <th>Salary</th>
-    <th>Type</th>
-  </tr>
-  <tr>
-    <td>1</td>
-    <td>Bill Gates</td>
-    <td>Founder Microsoft</td>
-    <td>$1000</td>
-    <td rowspan="4">Company founder</td>
-  </tr>
-  <tr>
-    <td>2</td>
-    <td>Steve Jobs</td>
-    <td>Founder Apple</td>
-    <td>$1200</td>
-  </tr>
-  <tr>
-    <td>3</td>
-    <td>Larry Page</td>
-    <td>Founder Google</td>
-    <td>$1100</td>
-  </tr>
-  <tr>
-    <td>4</td>
-    <td>Mark Zuckeberg</td>
-    <td>Founder Facebook</td>
-    <td>$1300</td>
-  </tr>
-</table>
-<hr>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5 class="text-white">Marko Bekić</h5>
+          <p>Osobna web stranica</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5 class="text-white">Navigacija</h5>
+          <ul class="list-unstyled">
+            <li><a href="#">Početna</a></li>
+            <li><a href="#hobiji">Hobiji</a></li>
+           
+            <li><a href="#zadace">Zadaće</a></li>
+            <li><a href="#kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5 class="text-white">Kontakt</h5>
+          <ul class="list-unstyled">
+            <li>marko.bekic2808@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
-
-
-
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
+
 </html>
